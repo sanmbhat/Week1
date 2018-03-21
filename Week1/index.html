@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>AngularJS coursera week1 assignment</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<div ng-app="LunchCheck" ng-controller="LunchCheckController">
+		<input type="text" placeholder="Enter your lunch items here..." ng-model="lunchItems"/>
+		<button ng-click="checkIfTooMuch()">Check If Too Much</button>
+		<label>{{result}}</label>
+	</div>
+</body>
+</html>
